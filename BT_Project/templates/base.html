@@ -1,0 +1,52 @@
+{% load static %}
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+            <!-- Font Awesome -->
+            <link rel="stylesheet" href="{% static 'css/all.css' %}">
+            <!-- Bootstrap -->
+            <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+            <!-- Custom -->
+            <link rel="stylesheet" href="{% static 'css/style.css' %}">
+            <!-- Lightbox -->
+            <link rel="stylesheet" href="{% static 'css/ligtbox.min.css' %}">
+             <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+            
+   
+
+            
+        <title> BT Real Estate</title>
+
+    </head>
+
+    <body>
+
+        <!-- Topbar -->
+        {% include 'partials/_topbar.html' %}
+
+        <!-- Navbar -->
+        {% include 'partials/_navbar.html' %}
+
+
+        {% block content %} {% endblock %}
+
+        <!-- Footer -->
+        {% include 'partials/_footer.html' %}
+
+       
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="{% static ' js/jquery-3.3.1.min.js' %} "></script>
+        <script src="{% static '/js/bootstrap.bundle.min.js' %} "></script>
+        <script src="{% static '/js/ligtbox.min.js' %} "></script>
+        <script src="{% static 'js/main.js' %} "></script>
+    </body>
+</html>
